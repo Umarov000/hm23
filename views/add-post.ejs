@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <h3>Yangi post ma'lumotlarini kiriting</h3>
+
+    <form action="/add-post" method="post" id="post-form">
+      <label for="userId">UserID</label>
+      <input type="text" name="userId" id="userId"> <br> <br>
+
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title"> <br> <br>
+
+      <label for="body">Body</label>
+      <input type="text" name="body" id="body"> <br> <br>
+
+      <button type="submit">Saqlash</button>
+
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<form action="/edit-post/<%= post.id %>?_method=PUT" method="POST">
+  <label for="userId">User ID</label>
+  <input type="text" name="userId" id="userId" value="<%= post.userId %>" />
+  <br /><br />
+
+  <label for="title">Title</label>
+  <input type="text" name="title" id="title" value="<%= post.title %>" />
+  <br /><br />
+
+  <label for="body">Body</label>
+  <input type="text" name="body" id="body" value="<%= post.body %>" />
+  <br /><br />
+
+  <button type="submit">Saqlash</button>
+</form>
